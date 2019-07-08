@@ -13,9 +13,9 @@ class Song < ActiveRecord::Base
 
   def note_contents=(contents)
      contents.each do |content|
-       self.note << content
+       binding.pry
+       self.notes << content
      end
-     binding.pry
   end
 
 end
