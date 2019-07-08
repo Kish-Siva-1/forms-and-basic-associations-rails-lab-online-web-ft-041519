@@ -22,7 +22,7 @@ class Song < ActiveRecord::Base
 
   def note_contents
     binding.pry
-    self.notes.each do |x|
+    self.notes.collect do |x|
       x.content
     end
   end
