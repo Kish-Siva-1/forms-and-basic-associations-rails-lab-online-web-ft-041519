@@ -20,6 +20,8 @@ class SongsController < ApplicationController
       render :new
     end
   end
+  "genre_id"=>"1", "note_content"=>["", ""]},
+"commit"=>"Create Song"
 
   def edit
     @song = Song.find(params[:id])
