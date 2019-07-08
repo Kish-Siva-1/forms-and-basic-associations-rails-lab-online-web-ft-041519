@@ -26,9 +26,9 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def genre_name=(genre)
+  def genre_name=(name)
     binding.pry
-    Genre.find_or_create_by(name: genre)
+    genre = Genre.find_or_create_by(name: name)
     self.genre << genre
   end
 
