@@ -13,9 +13,9 @@ class Song < ActiveRecord::Base
 
   def note_contents=(contents)
      contents.each do |content|
-       note = Note.find(id)
-       self.note << post
+       self.note << content
      end
+     binding.pry
   end
 
 end
