@@ -27,6 +27,7 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name=(genre)
+    binding.pry
     self.genre << genre
   end
 
