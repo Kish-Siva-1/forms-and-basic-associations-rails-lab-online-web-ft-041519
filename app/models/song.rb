@@ -26,4 +26,12 @@ class Song < ActiveRecord::Base
     end
   end
 
+  def genre_name=(genre)
+    self.genre << genre
+  end
+
+  def genre_name
+    self.genre
+  end
+
 end
