@@ -5,5 +5,7 @@
   <%= f.text_field :title %>
   <%= f.text_field :artist_name %>
   <%= f.collection_select :genre_id, Genre.all, :id, :name %>
+  <input name="category[post_ids][]">
+  <input name="category[post_ids][]">
   <%= f.submit %>
 <% end %>
