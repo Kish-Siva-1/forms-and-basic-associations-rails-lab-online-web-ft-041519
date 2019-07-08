@@ -21,7 +21,6 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
-    binding.pry
     self.notes.collect do |x|
       x.content
     end
