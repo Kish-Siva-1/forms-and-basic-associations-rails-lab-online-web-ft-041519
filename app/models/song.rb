@@ -31,7 +31,7 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name
-    self.genre
+    self.genre.name
   end
 
 end
