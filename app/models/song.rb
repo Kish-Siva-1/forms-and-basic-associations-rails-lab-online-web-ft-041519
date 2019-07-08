@@ -8,7 +8,6 @@ class Song < ActiveRecord::Base
    end
 
   def artist_name
-    binding.pry
       self.artist ? self.artist.name : nil
   end
 
