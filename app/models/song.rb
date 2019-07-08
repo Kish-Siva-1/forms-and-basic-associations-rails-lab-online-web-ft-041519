@@ -29,7 +29,7 @@ class Song < ActiveRecord::Base
   def genre_name=(name)
     binding.pry
     genre = Genre.find_or_create_by(name: name)
-    self.genre << genre
+    self.genre = genre
   end
 
   def genre_name
