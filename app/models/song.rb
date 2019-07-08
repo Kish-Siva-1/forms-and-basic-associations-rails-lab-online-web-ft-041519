@@ -11,4 +11,6 @@ class Song < ActiveRecord::Base
       self.artist ? self.artist.name : nil
   end
 
+  
+
 end
